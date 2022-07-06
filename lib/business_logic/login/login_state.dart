@@ -1,10 +1,10 @@
-part of 'login_cubit.dart';
+part of 'login_bloc.dart';
 
 @immutable
 abstract class LoginState {}
 
 class LoginInitial extends LoginState {}
 
-class LoginIncorrectCredentials extends LoginState {}
-
 class LoginReady extends LoginState {}
+
+class LoginError extends LoginState {}
